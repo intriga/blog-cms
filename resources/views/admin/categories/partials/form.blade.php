@@ -17,8 +17,9 @@
   {{ Form::submit('Guardar', ['class' => 'btn btn-primary']) }}
 </div>
 
-@push('scripts')
-  <script src="/vendor/stringToSlug/jquery.stringToSlug.min.js"></script>
+@push('scripts')  
+  <script src="{{ asset('vendor/stringToSlug/jquery.stringToSlug.min.js') }}"></script>
+  
   <script>
     $(document).ready( function() {
       $("#name, #slug").stringToSlug({
